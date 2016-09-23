@@ -10,10 +10,9 @@
     "url": "https://github.com/babel/babel/tree/master/packages/eslint-config-babel"
   },
   "main": "index.js",
-  "dependencies": {
-    "babel-eslint": "^6.0.0",
+  "peerDependencies": {
     "eslint-plugin-babel": "^3.0.0",
-    "eslint-plugin-flowtype": "^2.19.0"
+    "eslint-plugin-flowtype": "^2.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
