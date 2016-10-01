@@ -49,7 +49,7 @@ module.exports = {
     "object-curly-spacing": ["error", "always"],
 
     // soft indent of 2 characters
-    "indent": ["error", 2],
+    "indent": ["error", 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
 
     // maximum length of 110 characters
     "max-len": ["error", 110, 2],
