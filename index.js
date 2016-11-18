@@ -17,12 +17,11 @@ module.exports = {
     "no-return-assign": "off",
     "consistent-return": "off",
     "no-shadow": "off",
-    "comma-dangle": "off",
     "no-use-before-define": "off",
     "no-empty": "off",
     "new-parens": "off",
     "no-cond-assign": "off",
-    "no-fallthrough": "off",
+    "no-fallthrough": "error",
     "new-cap": "off",
     "no-loop-func": "off",
     "no-unreachable": "off",
@@ -35,9 +34,21 @@ module.exports = {
     "no-inner-declarations": "off",
     "no-case-declarations": "off",
     semi: ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "prefer-const": ["error", {
+      destructuring: "any",
+      ignoreReadBeforeAssign: true
+    }],
+    "spaced-comment": ["error", "always", {
+      exceptions: ["-", "+"],
+      markers: ["=", "!"]           // space here to support sprockets directives
+    }],
+    "unicode-bom": ["error", "never"],
+    "prefer-template": "error",
+    "object-curly-spacing": ["error", "always"],
 
     // soft indent of 2 characters
-    "indent": ["error", 2],
+    "indent": ["error", 2, { SwitchCase: 1, VariableDeclarator: 1, outerIIFEBody: 1 }],
 
     // maximum length of 110 characters
     "max-len": ["error", 110, 2],
