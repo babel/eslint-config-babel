@@ -51,7 +51,8 @@ module.exports = {
     // Prevent using => in a condition where <= is intended
     "no-confusing-arrow": "error",
     // prevent no space in `if (){`
-    "space-before-blocks": ["error", "always"]
+    "space-before-blocks": ["error", "always"],
+    "prefer-const": "error"
   },
 
   globals: {
