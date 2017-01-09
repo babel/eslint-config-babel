@@ -1,9 +1,8 @@
 module.exports = {
   parser: "babel-eslint",
   extends: "eslint:recommended",
-  plugins: ["flowtype", "babel"],
+  plugins: ["flowtype"],
   rules: {
-    // Core rules
     "arrow-parens": ["error", "always"],
     "arrow-spacing": ["error", { before: true, after: true }],
     camelcase: "off",
@@ -42,8 +41,6 @@ module.exports = {
     "space-infix-ops": "error",
     semi: ["error", "always"],
     strict: "off"
-
-    // Plugin rules
     "flowtype/define-flow-type": "warn",
     "flowtype/use-flow-type": "warn",
   },
