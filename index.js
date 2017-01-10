@@ -9,7 +9,21 @@ module.exports = {
     "comma-dangle": "off",
     "consistent-return": "off",
     curly: "off",
-    "indent": ["error", 2],
+    indent: ["error", 2, {
+      SwitchCase: 1,
+      outerIIFEBody: 1,
+      FunctionDeclaration: {
+        parameters: 1,
+        body: 1,
+      },
+      FunctionExpression: {
+        parameters: 1,
+        body: 1,
+      },
+      CallExpression: {
+        parameters: 1,
+      }
+    }],
     "linebreak-style": ["error", "unix"],
     "key-spacing": "off",
     "keyword-spacing": "error",
