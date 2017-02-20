@@ -28,7 +28,7 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     "key-spacing": "off",
     "keyword-spacing": "error",
-    "max-len": ["error", 110, 2],
+    "max-len": ["error", 150, 2],
     "new-cap": "off",
     "new-parens": "off",
     "no-case-declarations": "off",
