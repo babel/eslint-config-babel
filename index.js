@@ -4,6 +4,7 @@ module.exports = {
   plugins: ["flowtype"],
   parserOptions: {
     ecmaVersion: 2017,
+    sourceType: "module"
   },
   rules: {
     camelcase: "off",
