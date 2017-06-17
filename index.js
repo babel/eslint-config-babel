@@ -2,36 +2,14 @@ module.exports = {
   parser: "babel-eslint",
   extends: "eslint:recommended",
   plugins: ["flowtype"],
+  ecmaVersion: 2017,
   rules: {
-    "arrow-parens": ["error", "always"],
-    "arrow-spacing": ["error", { before: true, after: true }],
     camelcase: "off",
-    "comma-dangle": ["error", "always-multiline"],
-    "comma-spacing": "error",
     "consistent-return": "off",
     curly: "off",
-    "func-call-spacing": "error",
-    indent: ["error", 2, {
-      SwitchCase: 1,
-      outerIIFEBody: 1,
-      FunctionDeclaration: {
-        parameters: 1,
-        body: 1,
-      },
-      FunctionExpression: {
-        parameters: 1,
-        body: 1,
-      },
-      CallExpression: {
-        parameters: 1,
-      }
-    }],
     "linebreak-style": ["error", "unix"],
-    "key-spacing": "error",
-    "keyword-spacing": "error",
     "max-len": ["error", 110, 2],
     "new-cap": "off",
-    "new-parens": "off",
     "no-case-declarations": "off",
     "no-cond-assign": "off",
     "no-confusing-arrow": "error",
@@ -51,12 +29,7 @@ module.exports = {
     "no-unreachable": "off",
     "no-use-before-define": "off",
     "no-var": "error",
-    "object-curly-spacing": ["error", "always"],
     "prefer-const": "error",
-    quotes: ["error", "double"],
-    "space-before-blocks": ["error", "always"],
-    "space-infix-ops": "error",
-    semi: ["error", "always"],
     strict: "off",
     "flowtype/define-flow-type": "warn",
     "flowtype/use-flow-type": "warn",
@@ -68,7 +41,6 @@ module.exports = {
   },
   env: {
     node: true,
-    es6: true,
     browser: true
   }
 };
